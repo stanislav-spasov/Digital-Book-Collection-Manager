@@ -1,5 +1,4 @@
 Title: stasi | Author: spasov | Status: read
 Title: Milena | Author: Min | Status: Unread
-Title: 300 | Author: stanislav | Status: Unread
+Title: 300 | Author: stanislav | Status: Read
 Title: 200 | Author: bobi | Status: Unread
-Title: 300 | Author: stanislav | Status: Unread

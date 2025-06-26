@@ -14,10 +14,11 @@ def add_book(add_title: str, add_author: str, title_list: list[str], author_list
 
 
 def mark_as_read(title_read: str, title_list: list[str], status_list: list[str]):
-    if title_read in title_list:
-        title_index = title_list.index(title_read)
-        status_list[title_index] = "Read"
+    if f"Title: {title_read}" in title_list:
+        title_index = title_list.index(f"Title: {title_read}")
+        status_list[title_index] = "Status: Read"
         print(f"\nThe book '{title_read}' has been mark as read.")
+        save_fail()
     else:
         print(f"\nThe book '{title_read}' is not exist in your book manager.")
 
@@ -102,7 +103,7 @@ def main():
         print("7. Delete a book")
         print("8. Exit")
 
-        choice = input("\nEnter your choice (1-9): ")
+        choice = input("\nEnter your choice (1-8): ")
 
         process_command(choice, title, authors, statuses)
 
